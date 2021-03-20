@@ -1,2 +1,2 @@
-# 3DAPRNet
+# APRNet
 Coming Soon...
