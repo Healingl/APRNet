@@ -1,6 +1,7 @@
 # APRNet
 Our source code is being packaged as an open source project, and will be released in March 2022.
 
+'''
 @ARTICLE{9470936,
   author={Zhuang, Yuzhou and Liu, Hong and Song, Enmin and Ma, Guangzhi and Xu, Xiangyang and Hung, Chih-Cheng},
   journal={IEEE Journal of Biomedical and Health Informatics}, 
@@ -10,3 +11,4 @@ Our source code is being packaged as an open source project, and will be release
   number={2},
   pages={749-761},
   doi={10.1109/JBHI.2021.3093932}}
+'''
