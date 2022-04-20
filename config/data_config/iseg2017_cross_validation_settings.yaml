@@ -1,0 +1,35 @@
+dataset_name: iseg2017
+
+# iseg2017 raw data
+# labeled training data dir
+raw_train_data_dir: '../../data/BrainTissue/iSeg-2017-Training/'
+# unlabeled testing data dir
+raw_test_data_dir: '../../data/BrainTissue/iSeg-2017-Testing/'
+
+
+# csv data dir
+csv_dir: './csv/'
+# origin csv
+iseg2017_training_raw_csv_path: './csv/iseg2017_origin_train_all_data.csv'
+
+# preprocessed data dir
+iseg2017_training_preproc_data_dir: '../../sample_data/iseg2017/preproc/'
+
+# preprocessed csv
+iseg2017_training_preproc_csv_path: './csv/iseg2017_preproc_train_all_data.csv'
+
+
+# cross validation folds
+kfold: 10
+# splitting seed
+random_seed: 2022
+
+# modality
+# t1, t2
+
+# label
+# iseg2017 Converts 0:background / 10:CSF / 150:GM / 250:WM to 0/1/2/3.
+cate_to_label_dict: {'bg':0, "CSF": 1,  'GM': 2, 'WM': 3}
+label_to_cate_dict: {'0':'bg','1':'CSF','2':'GM', '3':'WM'}
+
+

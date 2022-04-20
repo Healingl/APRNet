@@ -1,0 +1,60 @@
+model_name: NoNewUNet
+dataset_name: iseg2017
+
+# iseg2017 Converts 0:background / 10:CSF / 150:GM / 250:WM to 0/1/2/3.
+cate_to_label_dict: {'bg':0, "CSF": 1,  'GM': 2, 'WM': 3}
+label_to_cate_dict: {'0':'bg','1':'CSF','2':'GM', '3':'WM'}
+
+cal_class_list: [1,2,3]
+
+# crop size
+crop_size: (64,64,64)
+val_slide_step_size: (16,16,16)
+
+train_data_csv_path: ./csv/kfold_10_data/0/train_preproc.csv
+val_data_csv_path: ./csv/kfold_10_data/0/val_preproc.csv
+
+# 训练参数
+# 通道数（即模态数）
+input_channels: 2
+# 标签数
+num_classes: 4
+
+seed: 2020
+
+gpus: [1]
+use_aug: True
+train_batch_size: 4
+val_batch_size: 4
+num_workers: 0
+
+# train 200 epochs
+# iterations: num_epochs*each_epoch_iter
+num_epochs: 100
+each_epoch_iter: 512
+
+train_show_frep: 5
+
+# save every 1 epochs
+saveEpochs: 1
+earlyStopEpoch: 30
+
+net_params:
+  base_n_filter: 32
+  depth: 2
+
+criterion_name: BCEDiceLoss
+
+opt: Adam
+opt_params:
+  lr: 1e-4
+  weight_decay: 6e-4
+
+lr_scheduler: StepLR
+step_size: 25
+
+
+resume: False
+resume_weight_path: './work_dir/Unet3D/epoch_13_val_dsc_0.7911.pth.tar'
+
+workdir: ./work_dir/NoNewUNet_Fold0/

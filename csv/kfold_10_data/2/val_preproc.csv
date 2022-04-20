@@ -1,0 +1,2 @@
+patient_id,whole_brain_size,t1,t2,seg
+subject-4,"(157, 188, 144)",/mnt/data1/zyzbrain/Experiments/Brain_All_Public_Codes/sample_data/iseg2017/preproc/subject-4/subject-4_preproc_t1.npy,/mnt/data1/zyzbrain/Experiments/Brain_All_Public_Codes/sample_data/iseg2017/preproc/subject-4/subject-4_preproc_t2.npy,/mnt/data1/zyzbrain/Experiments/Brain_All_Public_Codes/sample_data/iseg2017/preproc/subject-4/subject-4_preproc_seg.npy

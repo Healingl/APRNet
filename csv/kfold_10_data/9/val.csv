@@ -1,0 +1,2 @@
+patient_id,t1,t2,seg
+subject-1,/mnt/data1/zyzbrain/Experiments/Brain_All_Public_Codes/data/BrainTissue/iSeg-2017-Training/subject-1-T1.hdr,/mnt/data1/zyzbrain/Experiments/Brain_All_Public_Codes/data/BrainTissue/iSeg-2017-Training/subject-1-T2.hdr,/mnt/data1/zyzbrain/Experiments/Brain_All_Public_Codes/data/BrainTissue/iSeg-2017-Training/subject-1-label.hdr
